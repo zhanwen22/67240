@@ -1,0 +1,172 @@
+/* Ordered by element, id, class, then media */
+* {
+	font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+	font-size:100%;
+	box-sizing: border-box;
+}
+body {
+    background-color: #FFF8E8 !important;
+}
+
+header {
+    padding: 1%;
+    background-color: #F7EED3;
+}
+
+header h1 {
+    font-family: "Style Script", cursive;
+    font-size: 500%;
+    color: #674636;
+}
+
+h2 {
+    font-family: "Style Script", cursive;
+    font-size: 450%;
+}
+
+h3 {
+    font-family: "Style Script", cursive;
+    font-size: 400%;
+}
+
+nav a{
+    color:black;
+    font-family: "Sansita", sans-serif;
+    font-size: 200%;
+    font-family: "Style Script", cursive;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-decoration: none;
+} 
+
+nav {
+    padding-bottom: 1.20em;
+    clear:both;
+    display: block;
+    margin:auto;
+}
+
+
+nav a:hover{
+    color:#AAB396; 
+}
+
+nav a.selected{
+    color:#674636; 
+    text-decoration: underline;
+}
+
+
+/*IDs */
+#carouselAutoplaying {
+    height: 25em;
+    overflow: hidden;
+}
+
+#carouselAutoplaying .carousel-item {
+    height: 100%;
+}
+
+#carouselAutoplaying .carousel-item img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+}
+
+#concert-slides {
+    height: 25em;
+    overflow: hidden;
+}
+
+#setlist, #ticket-type, #travel{
+    padding: 1%;
+}
+
+#setlist ol{
+    font-size: 100%;
+}
+
+#ticket-type dl {
+    font-size: 100%;
+}
+
+#travel p {
+    font-size: 100%;
+    text-align: left;
+}
+
+#tickets p{
+    font-size: 120%;
+}
+
+#updates {
+    margin-top: 3%;
+}
+
+#updates p{
+    font-size: 120%;
+    text-align: left;
+}
+
+#updates a, #travel a{
+    color:#674636; 
+    text-decoration: none;
+}
+
+#updates a:hover, #travel a:hover{
+    color:#AAB396; 
+}
+
+/*Classes*/
+
+.container-order{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar, .main{
+    padding: 1%;
+}
+
+/*For laptop sized screens*/
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: 40%;
+    }
+    .main {
+        width: 60%;
+    }
+}
+
+/*For tablet sized screens*/
+@media screen and (max-width: 992px){
+    nav a{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .sidebar, .main{
+        width: 100%;
+    }
+
+    #travel{
+        margin-top: 3%;
+    }
+}
+
+/* For cell phone sized screens */
+@media screen and (max-width: 576px){
+    nav a{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .sidebar, .main{
+        width: 100%;
+    }
+    
+    #setlist, #ticket-type, #travel{
+        margin-top: 3%;
+    }
+}
